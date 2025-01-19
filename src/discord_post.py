@@ -7,7 +7,7 @@ def post_on_discord(new_props, TOKEN, channel_id):
 
         for prop in new_props:
             message_strings.append(
-                " Found: {0}\n{1}\nPrice: {2}\n{3}".format(
+                " Found:\n{1}\nPrice: {2}\n{3}".format(
                     *[
                         prop["name"],
                         prop["address"],
