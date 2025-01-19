@@ -12,7 +12,7 @@ TOKEN = os.environ.get("DISCORD_TOKEN")
 
 urls = {
     "rightmove": "https://www.rightmove.co.uk/property-to-rent/find.html?locationIdentifier=USERDEFINEDAREA%5E%7B%22polylines%22%3A%22ekhyHhzD~Hk%7CD%7BaBx%60%40%7BZ%7Cx%40iClwB%60xByU%22%7D&maxBedrooms=1&maxPrice=2000&minPrice=1250&propertyTypes=&mustHave=&dontShow=&furnishTypes=furnished&keywords=",
-    "spareroom": "https://www.spareroom.co.uk/flatshare/index.cgi?&search_id=1274474201&offset=10&sort_by=days_since_placed",
+    "spareroom": "https://www.spareroom.co.uk/flatshare/?search_id=1343131448&sort_by=days_since_placed&mode=list",
     "onthemarket": "https://www.onthemarket.com/to-rent/property/canary-wharf-station-1/?max-price=2000&min-price=1250&radius=0.5&sort-field=update_date",
 }
 

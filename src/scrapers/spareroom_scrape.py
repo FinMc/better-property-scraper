@@ -11,10 +11,12 @@ def spareroom_scraper(page):
         area = listing["data-listing-neighbourhood"]
         postcode = listing["data-listing-postcode"]
         address = "{area}, {postcode}".format(area=area, postcode=postcode)
-        price = listing.find("strong", attrs={"class": "listingPrice"}).text.split("<")[
-            0
-        ]
-        link = "https://www.spareroom.co.uk" + listing.find("a")["href"]
+        price = (
+            listing.find("p", attrs={"class": "listing-card__price"})
+            .text.strip()
+            .split(" ")[0]
+        )
+        link = "https://www.spareroom.co.uk" + listing.find("a")["href"].split("&")[0]
         name = listing["data-listing-title"]
         results.append(
             {
